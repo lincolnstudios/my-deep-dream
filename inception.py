@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 
+
 class Inception:
 
     input_image = "input:0"

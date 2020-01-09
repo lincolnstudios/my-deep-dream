@@ -82,7 +82,8 @@ class DeepDream:
                                           iterations=iterations,
                                           step_size=step_size)
         return final_image   
-    
+
+
 def main():
     if len(sys.argv) > 1:
         image_to_open = sys.argv[1]
@@ -112,7 +113,7 @@ def main():
                                                       levels=LEVELS,
                                                       blend=BLEND)
     save_image(final_image, OUTPUT_IMAGE_NAME + ".jpeg")
-  
+
+
 if __name__== "__main__":
     main()
- 

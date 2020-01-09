@@ -1,16 +1,19 @@
 import numpy as np
 from PIL import Image
 
-def save_image(image, filename):
+
+def save_image(image, filename, img_format='jpeg'):
     image = np.clip(image, 0.0, 255.0)
     image = image.astype(np.uint8)
     with open(filename, 'wb') as file:
-        Image.fromarray(image).save(file, 'jpeg')
+        Image.fromarray(image).save(file, img_format)
+
 
 def normalize_image(image):
     image_min = image.min()
     image_max = image.max()
     return (image - image_min) / (image_max - image_min)
+
 
 def resize_image(image, size=None, factor=None):
     if factor is not None:

@@ -13,12 +13,16 @@ Minimal Python/TensorFlow implementation of the DeepDream algorithm originally c
 ## Usage
 
 To use on the predefined .jpg image:
- 
-	python3 deep_dream.py <path_to_the_image>
+
+```bash
+$ python3 deep_dream.py <path_to_the_image>
+```
 
 or
 
-	python3 deep_dream.py
+```bash
+$ python3 deep_dream.py
+```
 
 to perform on the random image.
 
@@ -33,6 +37,8 @@ During the classification process we are providing input images and using gradie
 
 
 ## Results
+
+![src deep_dream_0](/examples/deep_dream_0.jpeg)
 
 <img src="examples/deep_dream_0.jpeg">
 <img src="examples/deep_dream_1.jpeg">
